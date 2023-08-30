@@ -1,7 +1,9 @@
 import React from "react";
-
+import Entry from "./Entry";
 function Home() {
-  return <div>Home</div>;
+  return  (
+    <Entry/>
+  );
 }
 
 export default Home;

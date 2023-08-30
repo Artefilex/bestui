@@ -39,8 +39,8 @@ function Sidebar() {
         <Link to="/" >  
           <GrHomeRounded className="navbar-icon"/>
          </Link>
-         <Link to="/buttons" >  
-           <span>Buttons</span>
+         <Link to="/docs" >  
+           <span>Docs</span>
          </Link>
          <Link to="/" >  
              <span>Forms</span> 
@@ -49,7 +49,7 @@ function Sidebar() {
              <span>Cards</span> 
          </Link>
          <Link to="/" >  
-             <span>animation</span> 
+             <span>Animation</span> 
          </Link>
          <Link to="/" >  
              <span>Css</span> 

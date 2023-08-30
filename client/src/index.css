@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
 :root{
   --sidebar-bg-color : rgb(13, 12, 26);
   --sidebar-color : rgb(255,255,255);
@@ -27,6 +28,7 @@
   --border-icon: 3px solid rgb(13, 99, 92);
   --white-button-border: 3px solid rgb(234, 238, 238);
   --border-white: 2px solid rgb(186, 186, 186);
+  --border-dark: 1px solid rgba(255, 255, 255, 0.107);
   --border-white2: 1px solid rgb(186, 186, 186);
   --icon-span-color: rgb(25, 112, 96);
   --icon-color: rgb(63, 72, 70);
@@ -50,6 +52,17 @@
   --size-half: 50%;
   --size-form: 350px;
   --size-blog: 240px;
+  --linear-home: linear-gradient(
+    90deg,
+    hsl(244deg 37% 7%) 0%,
+    hsl(231deg 45% 14%) 14%,
+    hsl(220deg 54% 19%) 29%,
+    hsl(220deg 54% 19%) 43%,
+    hsl(220deg 54% 19%) 57%,
+    hsl(220deg 54% 19%) 71%,
+    hsl(231deg 45% 14%) 86%,
+    hsl(244deg 37% 7%) 100%
+  );
 
 }
 * {
@@ -96,7 +109,7 @@ code {
 }
 
 .App .location{
-  padding-top: 8rem;
+  padding-top: 5rem;
   width: 100%;
 }
 
@@ -120,7 +133,7 @@ code {
   flex-direction: row;
  }
  .App .location{
-  padding-top: 1rem;
-  padding-left: 10rem;
+  padding-top: 0rem;
+  padding-left: 5rem;
 }
 }

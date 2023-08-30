@@ -6,6 +6,7 @@
     color: var(--sidebar-color);
     padding: 0.5rem; 
     flex-direction: row;
+    border-right: var(--border-dark);
    }
 
    .Sidebar .sidebar-nav{
@@ -25,7 +26,9 @@
 .Sidebar .sidebar-logo{
     width: 100%;
 }
-
+.Sidebar .sidebar-nav a span{
+    font-size: 0.8rem;
+}
 .Sidebar .sidebar-logo a img{
    width: 100px;
    filter: invert(1)
