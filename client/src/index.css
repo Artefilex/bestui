@@ -1,8 +1,73 @@
 :root{
   --sidebar-bg-color : rgb(13, 12, 26);
   --sidebar-color : rgb(255,255,255);
-}
+  --white-bg: rgb(255, 255, 255);
+  --card-light: rgb(250, 250, 250);
+  --body-bg-light: rgb(234, 234, 234);
+  --global-bg-dark: rgb(35, 35, 35);
+  --color-dashbord: rgb(72, 87, 79);
+  --color-dashbord-circle: rgb(44, 81, 61);
+  --color-title: rgb(65 87 76);
+  --body-bg-dark: rgb(20, 20, 20);
+  --light-color: rgb(250, 250, 250);
+  --dark-color: rgb(47, 47, 47);
+  --light-color-hover: rgb(121, 121, 121);
+  --icon: rgb(121, 121, 121);
+  --light-bg-hover: rgb(240, 240, 240);
+  --li-box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  --navbar-dark-bg: rgb(35, 35, 35);
+  --navbar-light-bg: rgb(250, 250, 250);
+  --navbar-box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  --button-box-shadow: rgba(0, 0, 0, 0.628) 0px 3px 8px;
+  --box-shadow-card: rgba(100, 100, 111, 0.2) 0px 7px 15px 0px;
+  --container-box-shadow: rgba(0, 0, 0, 0.628) 0px 3px 8px;
+  --input-border: 1px solid rgb(186, 186, 186);
+  --light-border: 1px solid rgb(186, 186, 186);
+  --dark-border: 1px solid rgb(77, 77, 77);
+  --border-icon: 3px solid rgb(13, 99, 92);
+  --white-button-border: 3px solid rgb(234, 238, 238);
+  --border-white: 2px solid rgb(186, 186, 186);
+  --border-white2: 1px solid rgb(186, 186, 186);
+  --icon-span-color: rgb(25, 112, 96);
+  --icon-color: rgb(63, 72, 70);
+  --light-bg: rgb(210, 208, 208);
+  --display-1: 0.5rem 0.5rem;
+  --display-2: 1rem 0.5rem;
+  --display-3: 2rem 1rem;
+  --display-4: 4rem 2rem;
+  --display-5: 0.75rem 1rem;
+  --display-6: 0.5rem 2rem;
+  --display-7: 1rem 2rem;
+  --display-8: 0.5rem 2rem;
+  --display-9: 0.5rem 1rem;
+  --size-full: 100%;
+  --size-xxl: 95%;
+  --size-xl: 90%;
+  --size-large: 85%;
+  --size-medium: 80%;
+  --size-smedium: 75%;
+  --size-small: 70%;
+  --size-half: 50%;
+  --size-form: 350px;
+  --size-blog: 240px;
 
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+  transition: 0.5s ease-in-out;
+}
+a {
+  text-decoration: none;
+  color: var(--sidebar-color);
+}
+a:hover {
+  transition: 0.2s ease-in-out;
+  color: var(--light-color-hover);
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -31,7 +96,8 @@ code {
 }
 
 .App .location{
-  padding-left: 10rem;
+  padding-top: 8rem;
+  width: 100%;
 }
 
 .menu-button{
@@ -53,4 +119,8 @@ code {
  .App{
   flex-direction: row;
  }
+ .App .location{
+  padding-top: 1rem;
+  padding-left: 10rem;
+}
 }

@@ -39,7 +39,7 @@ function Sidebar() {
         <Link to="/" >  
           <GrHomeRounded className="navbar-icon"/>
          </Link>
-         <Link to="/" >  
+         <Link to="/buttons" >  
            <span>Buttons</span>
          </Link>
          <Link to="/" >  

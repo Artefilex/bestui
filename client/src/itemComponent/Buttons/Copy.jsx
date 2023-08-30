@@ -11,7 +11,7 @@ function Copy() {
   };
   
   const reactCode = `
-        <button classname = "ejs" > click </button>
+<button classname = "ejs" > click </button>
   `;
   
   const cssCode = `
