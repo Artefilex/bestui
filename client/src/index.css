@@ -23,3 +23,34 @@ code {
   justify-content: space-between;
   flex-direction: column;
 }
+
+.App{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.App .location{
+  padding-left: 10rem;
+}
+
+.menu-button{
+  background: transparent;
+  outline: none;
+  border: none;
+  filter: invert(1); 
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+@media screen and (min-width: 500px) {
+  .menu-button{
+   display: none;
+  }
+ }
+
+
+@media screen and (min-width: 900px) {
+ .App{
+  flex-direction: row;
+ }
+}
