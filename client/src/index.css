@@ -100,6 +100,7 @@ code {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
+  width: var(--size-full);
 }
 
 .App{
@@ -120,6 +121,24 @@ code {
   filter: invert(1); 
   font-size: 1.5rem;
   margin-right: 1rem;
+}
+.nav{
+ flex-direction: column;
+ align-items: flex-start;
+ height: 100%;
+ justify-content: flex-start;
+
+} 
+
+.btn{
+  background: transparent;
+  outline: none;
+  border: none;
+  filter: invert(1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
 }
 @media screen and (min-width: 500px) {
   .menu-button{
