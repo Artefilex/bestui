@@ -97,7 +97,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+button{
+  cursor: pointer;
+}
 .flex{
   display: flex;
   align-items: center;
@@ -152,14 +154,13 @@ code {
 
 .item-container {
   display: grid;
+  width: var(--size-full);
   grid-template-columns: repeat(1, 1fr);
-  gap: 4rem;
-  /* position: relative; */
-  top: 1rem;
+  gap: 3rem;
   padding: 1rem;
 }
 .item-container .item {
-width: 10rem;
+ width: var(--size-xxl);
 padding: var(--display-8);
  background: var(--card-light);
  border: var(--light-border);
@@ -168,11 +169,12 @@ padding: var(--display-8);
 }
 
 .Copy-Header{
-  width: var(--size-xl);
+  width: var(--size-xxl);
   align-items: flex-start;
   gap: 1rem;
-  padding-top: 2rem;
+  padding: 2rem 0rem;
   color: var(--light-color);
+ 
 }
 .code-header {
   flex-direction: row;
@@ -182,7 +184,6 @@ padding: var(--display-8);
 }
 
 .code-space .code-area {
-  width: var(--size-large);
   margin-bottom: 1rem;
 }
 
