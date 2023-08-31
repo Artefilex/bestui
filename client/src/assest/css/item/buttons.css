@@ -1,0 +1,9 @@
+.ejs{
+  background: var(--dark-bg);
+  padding: var(--display-9);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: var(--light-color);
+}
+

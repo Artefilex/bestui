@@ -1,0 +1,21 @@
+
+
+.Copy-container {
+  width: var(--size-xxl);
+  margin-top: 1rem;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.Copy-container .code-space {
+  width: var(--size-full);
+  align-items: flex-start;
+  justify-content: flex-start;
+  top: 2rem;
+  margin-bottom: 1rem;
+}
+
+
+@media screen and (min-width: 900px) {
+
+}

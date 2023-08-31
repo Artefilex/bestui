@@ -1,6 +1,6 @@
 .Sidebar{
     background: var(--sidebar-bg-color );
-    height: 5rem;
+    height: 4rem;
     position: fixed;
     width: var(--size-full);
     color: var(--sidebar-color);
@@ -8,12 +8,13 @@
     flex-direction: row;
     border-right: var(--border-dark);
     gap: 2rem;
+    z-index: 10000;
    }
 
    .Sidebar .sidebar-nav{
     position: absolute;
     width: var(--size-full);
-    top:5rem;
+    top:4rem;
     left: 0;
     background: var(--sidebar-bg-color);
     flex-direction: column;
