@@ -102,6 +102,9 @@ code {
   flex-direction: column;
   width: var(--size-full);
 }
+.container{
+  padding-left: 4rem;
+}
 
 .App{
   width: 100%;

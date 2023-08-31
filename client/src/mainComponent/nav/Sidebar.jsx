@@ -41,10 +41,10 @@ function Sidebar() {
       )}
       {(show || !mobile) && (
           <ul className="flex sidebar-nav">
-            <NavbarItem to="/doc" btnName="Docs">
-              <DocNav />
+            <NavbarItem  content="Overview" btnName="Docs">
+              <DocNav/>
             </NavbarItem>
-            <NavbarItem to="/example" btnName="Example">
+            <NavbarItem  content="Overview" btnName="Example">
             <DocNav />
             </NavbarItem>
           </ul> 

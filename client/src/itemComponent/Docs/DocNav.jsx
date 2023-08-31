@@ -3,16 +3,16 @@ import { Link } from "react-router-dom";
 function DocNav() {
   return (
     <nav className="flex navbar-down-container"> 
-     <Link to="/doc/responsive" >  
-       <span>Design</span>
+     <Link to="/docs" >  
+       <span>Overview</span>
      </Link>
-     <Link to="/doc/buttons" >  
+     <Link to="/docs/buttons" >  
          <span>Buttons</span> 
      </Link>
-     <Link to="/doc/forms" >  
+     <Link to="/docs/forms" >  
          <span>Forms</span> 
      </Link>
-     <Link to="/doc/card" >  
+     <Link to="/docs/card" >  
      <span>Cards</span> 
      </Link>
      

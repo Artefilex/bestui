@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+
 import { BsCaretRight, BsCaretDown } from "react-icons/bs";
-function NavbarItem({ to, children, btnName }) {
+function NavbarItem({  children, btnName ,content }) {
   const [show, setShow] = useState(false);
 
   const handleClick = () => {
@@ -17,7 +17,9 @@ function NavbarItem({ to, children, btnName }) {
         <div className="flex">
           <ul className="flex" >
             <li className="nav navbar-down">
-              <Link to={to}>{children}</Link>
+              <div>
+                {children}
+              </div>
             </li>
           </ul>
         </div>

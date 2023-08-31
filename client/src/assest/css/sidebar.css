@@ -45,7 +45,7 @@
 
 .navbar-down-container{
     position: relative;
-    left: 1rem;
+    left: 10rem;
     top: 1rem;
     background: var(--sidebar-bg-color );
     padding: var(--display-2);
@@ -75,13 +75,14 @@
     .navbar-down{
         position: relative;
         top: 0rem;
+        right: 3rem;
         width: 100%;
     }
     .navbar-down-container{
-        
+        gap: 1rem;
+        left: 2rem;
         position: absolute;
-        left: -5rem;
-        width: 12rem;
+        width: 10rem;
         border-left: var(--border-dark);
     }
    
@@ -99,6 +100,8 @@
         justify-content: flex-start;
         gap: 2rem;
         margin-right: 0rem;
+        overflow: auto;
+        
     }
     .Sidebar .sidebar-logo a img{
         width: 100%;
@@ -107,11 +110,13 @@
      .navbar-down{
         position: relative;
         top: 1rem;
+        left: 0;
         margin-bottom: 1rem;
         flex-direction: column;
     } 
     .navbar-down-container{
         position: relative;
+        
         left: 0;
         width: var(--size-full);
         align-items: flex-start;

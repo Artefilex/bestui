@@ -3,53 +3,44 @@ import CopyToClipboard from "react-copy-to-clipboard";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { darcula } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { AiOutlineCopy } from "react-icons/ai";
-import "./copy.css"
-function Copy() {
+import "./copy.css";
+function Copy({ cssCode, cssClass }) {
   const [show, setShow] = useState(false);
   const handleclick = () => {
-    setShow(!show);
+    setShow((prevShow) => !prevShow);
   };
-  
-  const reactCode = `
-<button classname = "ejs" > click </button>
-  `;
-  
-  const cssCode = `
-  button{
-    color : wheat;
-    background: black;
-}
-  `;  
-  
   return (
-    <div>
-      <button onClick={handleclick}>click</button>
+    <div className="Copy-container flex">
+      <button className={cssClass} onClick={handleclick} >
+        click
+      </button>
       {show && (
-        <div className="code-space">
-          <div className="code-area">
-            <CopyToClipboard text={reactCode}>
-              <header className="code-header">
-                React
+        <div className="code-space flex">
+          <div className="code-area flex">
+            <header className="code-header flex">
+                <span>Code</span>
+              <CopyToClipboard text={cssCode.react}>
                 <button className="copy-button">
                   <AiOutlineCopy />
                 </button>
-              </header>
-            </CopyToClipboard>
+              </CopyToClipboard>
+            </header>
+
             <SyntaxHighlighter language="jsx" style={darcula}>
-              {reactCode}
+              {cssCode.react}
             </SyntaxHighlighter>
           </div>
-          <div className="code-area">
-            <CopyToClipboard text={cssCode}>
-              <header className="code-header">
-                CSS
+          <div className="code-area flex">
+            <header className="code-header flex">
+             <span>CSS</span>
+              <CopyToClipboard text={cssCode.css}>
                 <button className="copy-button">
                   <AiOutlineCopy />
                 </button>
-              </header>
-            </CopyToClipboard>
+              </CopyToClipboard>
+            </header>
             <SyntaxHighlighter language="css" style={darcula}>
-              {cssCode}
+              {cssCode.css}
             </SyntaxHighlighter>
           </div>
         </div>
@@ -59,4 +50,3 @@ function Copy() {
 }
 
 export default Copy;
-

@@ -5,18 +5,20 @@
 }
 
 .Entry header{
-    width: 100%;
+    width: var(--size-xl);
    color: var(--sidebar-color);
    justify-content: center;
 }
 
 .Entry header h1{
-    font-size: 4rem;
+    font-size: 2rem;
+    text-align: center;
 }
 
 .Entry header h3{
     border-bottom: var(--border-dark);
     padding-bottom: 1rem;
+    text-align: center;
 }
 
 .Entry .start-btn {
@@ -24,7 +26,8 @@
     align-items: center;
     flex-direction: row;
     margin-top: 4rem;
-    width: 50%;
+    gap: 1rem;
+    width: var(--size-xl);
     justify-content: space-between;
     padding: var(--display-7);
     background: transparent;
@@ -95,14 +98,33 @@
         display: block;
     }
   }
+  @media screen and (min-width: 600px) {
+    .Entry header h1{
+      font-size: 3rem;
+  }
   
+  .Entry header h3{
+      border-bottom: var(--border-dark);
+      padding-bottom: 1rem;
+  }  
+
+
+   } 
+
  @media screen and (min-width: 900px) {
   .Entry header h1{
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 .Entry header h3{
     border-bottom: var(--border-dark);
     padding-bottom: 1rem;
-}  
+} 
+
+.Entry .start-btn {
+  margin-top: 4rem;
+  gap: 1rem;
+  width: 50%;
+}
+
  }
