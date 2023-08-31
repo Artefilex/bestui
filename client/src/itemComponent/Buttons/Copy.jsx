@@ -4,17 +4,18 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { darcula } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { AiOutlineCopy } from "react-icons/ai";
 import "./copy.css";
-function Copy({ cssCode, cssClass }) {
-  const [show, setShow] = useState(false);
-  const handleclick = () => {
-    setShow((prevShow) => !prevShow);
-  };
+function Copy({ cssCode, isActive}) {
+  // const [show, setShow] = useState(false);
+  // const handleclick = () => {
+  //   console.log(id)
+  //   setShow((prevShow) => !prevShow);
+  // };
   return (
     <div className="Copy-container flex">
-      <button className={cssClass} onClick={handleclick} >
+      {/* <button className={cssClass} onClick={handleclick} >
         click
-      </button>
-      {show && (
+      </button> */}
+      {isActive &&   (
         <div className="code-space flex">
           <div className="code-area flex">
             <header className="code-header flex">
