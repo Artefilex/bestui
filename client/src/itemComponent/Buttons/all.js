@@ -1,11 +1,12 @@
 const all = [
-  { header: {
-    itemType: "Styling for Classic Type Buttons",
-    headerCode: `<button className={"btn"} > Click Me </button>`
-   },
-   codeArea: [
-    {
-       css:  `.btn{
+  {
+    header: {
+      itemType: "Styling for Classic Type Buttons",
+      headerCode: `<button className={"btn"} > Click Me </button>`,
+    },
+    codeArea: [
+      {
+        css: `.btn{
         padding: 0.5rem 1rem;
         cursor: pointer;
         border: 1px solid rgb(126, 126, 126);
@@ -21,11 +22,11 @@ const all = [
         border-radius: 20px;
         transition: 0.6s ease-in-out;
       }`,
-       btncode: `Hover Me`,
-       cls:"green-button",
-    }, 
-    {
-      css:  `.btn{
+        btncode: `Hover Me`,
+        cls: "green-button",
+      },
+      {
+        css: `.btn{
         padding: 0.5rem 1rem;
         cursor: pointer;
         border: 1px solid rgb(126, 126, 126);
@@ -40,11 +41,11 @@ const all = [
       top: 4px;
       transition: 0.6s ease-in-out;
      } `,
-      btncode: `Click Me`,
-      cls:"green-button-active",
-   },
-   {
-    css:  `.btn{
+        btncode: `Click Me`,
+        cls: "green-button-active",
+      },
+      {
+        css: `.btn{
       padding: 0.9rem 1rem;
       cursor: pointer;
       border: 1px solid rgb(126, 126, 126);
@@ -52,18 +53,17 @@ const all = [
       font-weight: 900;
       background: rgb(3, 41, 63);
       color: rgb(255, 255, 255);
-      // border-radius: 3px;
+      border-radius: 30px;
    }
    .btn:hover{
     transform: scale(1.1);
-    border-radius: 30px;
     transition:0.3s ease-in-out;
    } `,
-    btncode: `Scale Hover`,
-    cls:"green-button-scale",
- },
- {
-  css:  `.btn{
+        btncode: `Scale Hover`,
+        cls: "green-button-scale",
+      },
+      {
+        css: `.btn{
     padding: 0.9rem 1rem;
     cursor: pointer;
     border: 1px solid rgb(126, 126, 126);
@@ -71,26 +71,45 @@ const all = [
     font-weight: 900;
     background: rgb(3, 41, 63);
     color: rgb(255, 255, 255);
-    border-radius: 3px;
+    border-radius: 30px;
  }
  .btn:active{
   transform: scale(0.9);
-  border-radius: 30px;
   transition:0.6s ease-in-out;
  } `,
-  btncode: `Scale Active`,
-  cls:"green-button-scale-active",
-},
-  ]
-
+        btncode: `Scale Active`,
+        cls: "green-button-scale-active",
+      },
+      {
+        css: `.btn{
+    padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  color: rgb(255, 255, 255);
+  background: rgb(1, 53, 18);
+  border-radius: 4rem;
+ font-weight: 800;
+ }
+ .btn:hover{
+  color: rgb(1, 53, 18);
+  background: rgb(255, 255, 255);
+ border: 1px solid rgb(1, 53, 18);
+ transition: 0.5s ease-in-out;
+ box-shadow: rgba(0, 0, 0, 0.65) 0px 5px 15px;
+ } `,
+        btncode: `Shadow Btn`,
+        cls: "standart-btn",
+      },
+    ],
   },
-  { header: {
-    itemType: "Slide Animation Button",
-    headerCode: ` <button class="slide_from_x slide ">SLIDE FROM LEFT</button>`
-   },
-   codeArea: [
-    {
-       css:  `
+  {
+    header: {
+      itemType: "Slide Animation Button",
+      headerCode: ` <button class="slide_from_x slide ">SLIDE FROM LEFT</button>`,
+    },
+    codeArea: [
+      {
+        css: `
        .slide {
          font-size: 1em;
          background: #3498db;
@@ -130,11 +149,11 @@ const all = [
          right: 100%;
        }
        `,
-       btncode: `Get start `,
-       cls:"slide_from_left  slide",
-    },
-    {
-      css:  `
+        btncode: `Get start `,
+        cls: "slide_from_left  slide",
+      },
+      {
+        css: `
       .slide {
         font-size: 1em;
         background: #3498db;
@@ -174,11 +193,11 @@ const all = [
         right: -100%;
       }
       `,
-      btncode: `Get start `,
-      cls:"slide_from_right  slide",
-   },
-   {
-    css:  `
+        btncode: `Get start `,
+        cls: "slide_from_right  slide",
+      },
+      {
+        css: `
     .slide {
       font-size: 1em;
       background: #3498db;
@@ -218,11 +237,11 @@ const all = [
       bottom: 100%;
     }
     `,
-    btncode: `Get start `,
-    cls:"slide_from_top  slide",
- }, 
- {
-  css:  `
+        btncode: `Get start `,
+        cls: "slide_from_top  slide",
+      },
+      {
+        css: `
   .slide {
     font-size: 1em;
     background: #3498db;
@@ -262,24 +281,23 @@ const all = [
     bottom: -100%;
   }
   `,
-  btncode: `Get start `,
-  cls:"slide_from_bottom slide",
-}, 
-  ]
-
+        btncode: `Get start `,
+        cls: "slide_from_bottom slide",
+      },
+    ],
   },
   {
-   header: {
-    itemType: "Animation Hover Button",
-    headerCode: `<button class='btn'>
+    header: {
+      itemType: "Animation Hover Button",
+      headerCode: `<button class='btn'>
     <i>H</i><i>o</i><i>v</i><i>e</i><i>r</i>
     <i>t</i><i>h</i><i>e</i>
     <i>B</i><i>u</i><i>t</i><i>t</i><i>o</i><i>n</i>
-   </button>`
-   },
-   codeArea: [
-     {
-        css:  ` .btn-hover-animate {
+   </button>`,
+    },
+    codeArea: [
+      {
+        css: ` .btn-hover-animate {
             font-size: 1.2rem;
             text-transform: uppercase;
             text-decoration: none;
@@ -326,20 +344,20 @@ const all = [
           }`,
         btncode: `
         <i>H</i><i>o</i><i>v</i><i>e</i><i>r</i>\n<i>t</i><i>h</i><i>e</i>\n<i>B</i><i>u</i><i>t</i><i>t</i><i>o</i><i>n</i>\n`,
-        cls:"btn-hover-animate",
-     }, 
-   ]
+        cls: "btn-hover-animate",
+      },
+    ],
   },
   {
     header: {
-        itemType: "Animation Hover Button ",
-        headerCode: ` <button className = "setting-btn" >
+      itemType: "Animation Hover Button ",
+      headerCode: ` <button className = "setting-btn" >
              <i className="bi bi-gear-wide"  id="setting" ></i>
-    </button>`
+    </button>`,
     },
     codeArea: [
       {
-         css:`.setting-btn {
+        css: `.setting-btn {
           background: #38925e;
           width: 170px;
           height: 50px;
@@ -401,25 +419,24 @@ const all = [
             transform: rotate(359deg);
           }
         }`,
-         btncode: `<i class="bi bi-gear-wide"  id="setting" ></i>`,
-         cls:"setting-btn",
-      }
-    ]
-   },
-   { header: {
-    itemType: "",
-    headerCode: ``
-   },
-   codeArea: [
-    {
-       css:  ` `,
-       btncode: ``,
-       cls:"",
-    }, 
-  ]
-
+        btncode: `<i class="bi bi-gear-wide"  id="setting" ></i>`,
+        cls: "setting-btn",
+      },
+    ],
   },
-
+  {
+    header: {
+      itemType: "",
+      headerCode: ``,
+    },
+    codeArea: [
+      {
+        css: ` `,
+        btncode: ``,
+        cls: "",
+      },
+    ],
+  },
 ];
 
 export default all;
