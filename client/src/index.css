@@ -167,6 +167,10 @@ pre{
   padding: 1rem;
 }
 .item-container .item {
+  min-height: 5rem;
+  justify-content: center;
+  align-items: center;
+  position: relative;
  width: var(--size-xxl);
 padding: var(--display-8);
  background: var(--card-light);

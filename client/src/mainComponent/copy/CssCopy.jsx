@@ -12,14 +12,14 @@ function CssCopy({ code, isActive}) {
           <div className="code-area flex">
             <header className="code-header flex">
              <span>CSS</span>
-              <CopyToClipboard text={code.css}>
+              <CopyToClipboard text={code}>
                 <button className="copy-button">
                   <AiOutlineCopy />
                 </button>
               </CopyToClipboard>
             </header>
             <SyntaxHighlighter language="css" style={darcula}>
-              {code.css}
+              {code}
             </SyntaxHighlighter>
           </div>
         </div>
