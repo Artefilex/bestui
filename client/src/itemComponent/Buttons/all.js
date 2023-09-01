@@ -1,14 +1,86 @@
 const all = [
   { header: {
     itemType: "Styling for Classic Type Buttons",
-    headerCode: `<button className={"className"} > Click Me </button>`
+    headerCode: `<button className={"btn"} > Click Me </button>`
    },
    codeArea: [
     {
-       css:  ` `,
-       btncode: ``,
-       cls:"",
+       css:  `.btn{
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        border: 1px solid rgb(126, 126, 126);
+        width: 6rem;
+        font-weight: 900;
+        background: rgb(3, 63, 9);
+        color: rgb(255, 255, 255);
+        border-radius: 3px;
+      }
+      .btn:hover{
+        background: rgb(255, 255, 255);
+        color: rgb(3, 63, 9);
+        border-radius: 20px;
+        transition: 0.6s ease-in-out;
+      }`,
+       btncode: `Hover Me`,
+       cls:"green-button",
     }, 
+    {
+      css:  `.btn{
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        border: 1px solid rgb(126, 126, 126);
+        width: 6rem;
+        font-weight: 900;
+        background: rgb(3, 63, 9);
+        color: rgb(255, 255, 255);
+        border-radius: 3px;
+     }
+     .btn:active{
+      position: relative;
+      top: 4px;
+      transition: 0.6s ease-in-out;
+     } `,
+      btncode: `Click Me`,
+      cls:"green-button-active",
+   },
+   {
+    css:  `.btn{
+      padding: 0.9rem 1rem;
+      cursor: pointer;
+      border: 1px solid rgb(126, 126, 126);
+      width: 10rem;
+      font-weight: 900;
+      background: rgb(3, 41, 63);
+      color: rgb(255, 255, 255);
+      // border-radius: 3px;
+   }
+   .btn:hover{
+    transform: scale(1.1);
+    border-radius: 30px;
+    transition:0.3s ease-in-out;
+   } `,
+    btncode: `Scale Hover`,
+    cls:"green-button-scale",
+ },
+ {
+  css:  `.btn{
+    padding: 0.9rem 1rem;
+    cursor: pointer;
+    border: 1px solid rgb(126, 126, 126);
+    width: 10rem;
+    font-weight: 900;
+    background: rgb(3, 41, 63);
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
+ }
+ .btn:active{
+  transform: scale(0.9);
+  border-radius: 30px;
+  transition:0.6s ease-in-out;
+ } `,
+  btncode: `Scale Active`,
+  cls:"green-button-scale-active",
+},
   ]
 
   },

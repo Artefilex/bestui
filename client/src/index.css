@@ -99,6 +99,8 @@ code {
 }
 button{
   cursor: pointer;
+  border: none; 
+  outline: none;
 }
 pre{
   

@@ -1,11 +1,71 @@
-.ejs{
-  background: var(--dark-bg);
-  padding: var(--display-9);
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  color: var(--light-color);
+
+/* --- basic buttons ---- */
+
+.green-button{
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: 1px solid rgb(126, 126, 126);
+  width: 6rem;
+  font-weight: 900;
+  background: rgb(3, 63, 9);
+  color: rgb(255, 255, 255);
+  border-radius: 3px;
 }
+.green-button:hover{
+  background: rgb(255, 255, 255);
+  color: rgb(3, 63, 9);
+  border-radius: 20px;
+  transition: 0.6s ease-in-out;
+}
+
+.green-button-active{
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: 1px solid rgb(126, 126, 126);
+  width: 6rem;
+  font-weight: 900;
+  background: rgb(3, 63, 9);
+  color: rgb(255, 255, 255);
+  border-radius: 3px;
+}
+.green-button-active:active{
+  position: relative;
+  top: 4px;
+  transition:0.6s ease-in-out;
+}
+
+.green-button-scale{
+  padding: 0.9rem 1rem;
+  cursor: pointer;
+  border: 1px solid rgb(126, 126, 126);
+  width: 10rem;
+  font-weight: 900;
+  background: rgb(3, 41, 63);
+  color: rgb(255, 255, 255);
+  /* border-radius: 3px; */
+}
+.green-button-scale:hover{
+  transform: scale(1.1);
+  border-radius: 30px;
+  transition:0.2s ease-in-out;
+}
+.green-button-scale-active{
+  padding: 0.9rem 1rem;
+  cursor: pointer;
+  border: 1px solid rgb(126, 126, 126);
+  width: 10rem;
+  font-weight: 900;
+  background: rgb(3, 41, 63);
+  color: rgb(255, 255, 255);
+  border-radius: 3px;
+}
+.green-button-scale-active:active{
+  transform: scale(0.9);
+  border-radius: 30px;
+  transition:0.6s ease-in-out;
+}
+/* --------------------- */
+
 .slide {
   font-size: 1em;
   background: #3498db;
