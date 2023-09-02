@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../../assest/css/item/buttons.css";
 import CssCopy from "../../mainComponent/copy/CssCopy";
 import CopyHeader from "../../mainComponent/copy/CopyHeader";
-import all from "./all";
+import allbtns from "./allbtns";
 
 function Buttons() {
   const [activeButtonId, setActiveButtonId] = useState(null);
@@ -13,7 +13,8 @@ function Buttons() {
 
   return (
     <div className="Button-container flex">
-      {all.map((allItem, i) => (
+      <h1 className="header-tag ">Buttons</h1>
+      {allbtns.map((allItem, i) => (
         <div className="Button-container flex"  key={i}>
           <CopyHeader
             itemType={allItem.header.itemType}
@@ -21,7 +22,7 @@ function Buttons() {
           />
           <div className="item-container">
             {allItem.codeArea.map((singleItem, se) => (
-              <div className="flex" key={se}>
+              <div className="item-flex" key={se}>
                 <div className="item animation-container flex">
                   <button
                     className={singleItem.cls}

@@ -424,19 +424,7 @@ const all = [
       },
     ],
   },
-  {
-    header: {
-      itemType: "",
-      headerCode: ``,
-    },
-    codeArea: [
-      {
-        css: ` `,
-        btncode: ``,
-        cls: "",
-      },
-    ],
-  },
+  
 ];
 
 export default all;
