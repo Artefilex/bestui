@@ -4,6 +4,8 @@ import CssCopy from "../../mainComponent/copy/CssCopy";
 import allform from "./allform";
 import FormCard from "./FormCard";
 import "../../assest/css/item/form.css"
+import ContactForm from "./ContactForm";
+import InputCard from "./InputCard";
 function Form() {
    const [activeForm , setActiveForm] = useState(null)
     const handleClick = (formId) =>{
@@ -13,7 +15,7 @@ function Form() {
   return <div className="Container flex">
   <h1 className="header-tag ">Forms</h1>
   {allform.map((allItem, i) => (
-     <>
+     <div className="flex" key={i} >
       <CopyHeader
         itemType={allItem.header.itemType}
         code={allItem.header.headerCode}
@@ -23,12 +25,13 @@ function Form() {
           <div className="item-flex" key={se}>
             <div className="item animation-container flex">
               <div
-                className={singleItem.cls}
+                className="flex"
                 onClick={() => handleClick(`${se}-${allItem.header.headerCode}`)}
              
               >
-                <FormCard clsInput={singleItem.clsInput} clsForm={singleItem.clsForm} clsBtn={singleItem.clsBtn}/>
-
+                {allItem.header.itemContent == "only-input" &&  <InputCard inputType={singleItem.inputType}  clsInput ={singleItem.clsInput} textArea={singleItem.textArea}  cls= {singleItem.cls} /> }
+                {allItem.header.itemContent == "standart-form" &&  <FormCard clsInput={singleItem.clsInput} clsForm={singleItem.clsForm} clsBtn={singleItem.clsBtn}/>  }
+                {allItem.header.itemContent == "contact-form" && <ContactForm/>}
               </div>
             </div>
             <div className="flex codebase">
@@ -41,7 +44,7 @@ function Form() {
         ))}
       </div>
      
-     </>
+     </div>
   
   ))}
 </div>;

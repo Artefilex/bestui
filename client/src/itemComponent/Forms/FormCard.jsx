@@ -31,11 +31,10 @@ function FormCard({ clsInput, clsForm, clsBtn }) {
         <input
           type="text"
           name="username"
+          id="username"
           className={clsInput}
-          value={form.username || "baris" }
+          value={form.username  || "baris"}
           onChange={handleChange}
-      
-
         />
       </div>
       <div className="form-control">
@@ -43,18 +42,20 @@ function FormCard({ clsInput, clsForm, clsBtn }) {
         <input
           type="email"
           name="email"
+          id="email"
           className={clsInput}
-          value={form.email || "baris.tncdmr@gmail.com" }
+          value={form.email || "baris@gmail.com"  }
           onChange={handleChange}
         />
       </div>
       <div className="form-control">
-        <label htmlFor="paswsord">Password</label>
+        <label htmlFor="password">Password</label>
         <input
           type="password"
           name="password"
+          id="password"
           className={clsInput}
-          value={form.password || "baris"}
+          value={form.password || "baris@gmail.com" }
           onChange={handleChange}
         />
       </div>

@@ -1,6 +1,173 @@
 const allform = [
   {
     header: {
+      itemContent: "only-input",
+      itemType: "Input",
+      headerCode: `
+      <div class="input-data">
+          <input type="text" name="text" required />
+          <label htmlFor="text">Name</label>
+       </div>
+          `,
+    },
+    codeArea: [
+
+      {
+        css: `.input-data{
+          width: 100%;
+          height: 40px;
+          margin: 0 20px;
+          position: relative;
+        }
+        
+        .input-data input{
+          display: block;
+          width: 100%;
+          height: 100%;
+          outline: none;
+          border: none;
+          font-size: 17px;
+          border-bottom: 2px solid rgba(0,0,0, 0.12);
+        }
+        
+        .input-data input:focus ~ label, 
+        .input-data input:valid ~ label{
+          transform: translateY(-20px);
+          font-size: 14px;
+          color: rgb(82, 81, 81);
+        }
+        
+        
+        .input-data label{
+          position: absolute;
+          pointer-events: none;
+          bottom: 10px;
+          font-size: 16px;
+          transition: all 0.3s ease;
+        }
+      `,
+        inputType: "email",
+        cls: "input-data",
+        clsInput: "Email",
+        textArea: "Email"
+      },
+      {
+        css: `..input-data-border{
+          width: 100%;
+          height: 40px;
+          margin: 0 20px;
+          position: relative;
+        }
+        
+        .input-data-border input{
+          display: block;
+          width: 100%;
+          height: 100%;
+          outline: none;
+          border: none;
+          font-size: 17px;
+          border-bottom: 2px solid rgba(0,0,0, 0.12);
+          transition: 0.3s ease-in-out;
+          border: 2px solid rgb(137, 137, 137);
+          padding: 0.5rem 1rem;
+          border-radius: 3rem;
+        }
+        
+        .input-data-border input:focus ~ .label, 
+        .input-data-border input:valid ~ .label{
+          transform: translateY(-20px);
+          font-size: 14px;
+         
+          color: rgb(82, 81, 81);
+          background: white;
+          left: 20px;
+        }
+        
+        .input-data-border .label{
+          position: absolute;
+          pointer-events: none;
+          bottom: 10px;
+          left: 2rem;
+          font-size: 16px;
+          transition: all 0.3s ease;
+        }
+        }
+      `,
+        inputType: "text",
+        cls: "input-data-border",
+        clsInput: "User Name",
+        textArea: "User Name"
+      },
+      {
+        css: `
+        .something{
+          width: 5rem;
+          height: 1rem;
+         border: 1px solid rgb(207, 207, 207);
+         display: flex;
+         align-items: center;
+         padding:  1rem ;
+         position: relative;
+         background: rgb(207, 207, 207);
+         transition: 0.3s ease-in-out;
+        border-radius: 10rem;
+        }
+        .something input[type="checkbox"]:not(:checked){
+        z-index: 12;
+        opacity: 0.01;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        }
+        .something input[type="checkbox"]:not(:checked) + label{
+          content: "";
+          position: absolute;
+          top: 8px;
+          left: 15px;
+          cursor: pointer;
+          width: 1rem;
+          height: 1rem;
+          background: rgb(90, 89, 89);
+          border-radius: 5rem;
+          transition: 0.3s ease-in-out;
+          
+        }
+        
+        .something input[type="checkbox"]:checked{
+          position: absolute;
+          right: 1rem;
+          z-index: 12;
+          opacity: 0.01;
+          cursor: pointer;
+          transition: 0.3s ease-in-out;
+        }
+        
+        
+        .something input[type="checkbox"]:checked + label{
+          content: "";
+          position: absolute;
+          top: 8px;
+          right: 16px;
+          cursor: pointer;
+          width: 1rem;
+          height: 1rem;
+          background: rgb(253, 253, 253);
+          border-radius: 5rem;
+          transition: 0.3s ease-in-out;
+        }
+      
+      `,
+        inputType: "checkbox",
+        cls: "something",
+        clsInput: "x",
+        textArea: "",
+      
+      },
+      
+    ],
+  },
+  {
+    header: {
+      itemContent: "standart-form",
       itemType: " Standart Form",
       headerCode: `import React, { useState } from "react";
 
@@ -320,6 +487,7 @@ const allform = [
       },
     ],
   },
+ 
 ];
 
 export default allform;

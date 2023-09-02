@@ -3,7 +3,7 @@
 }
 
 .standart-form {
-  width: 300px;
+  width: var(--size-full);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,7 +60,7 @@
     filter: invert(1);
 }
 .standart-form-dark {
-  width: 300px;
+  width: var(--size-full);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -117,7 +117,7 @@
     filter: invert(1);
 }
 .standart-form-dark-bottom{
-  width: 300px;
+  width: var(--size-full);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -176,8 +176,8 @@
 
 /* ------------- */
 
-.standart-form-bottom{
-  width: 300px;
+ .standart-form-bottom{
+  width: var(--size-full);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -230,7 +230,161 @@
 
   color: rgb(252, 252, 252);
   background: #38925e;
-  /* border: 1px solid black; */
   border-bottom: none;
   font-weight: 900;
+} 
+
+
+
+
+/* ---------------- */
+
+.input-data{
+  width: 100%;
+  height: 40px;
+  margin: 0 20px;
+  position: relative;
+}
+
+.input-data input{
+  display: block;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid rgba(0,0,0, 0.12);
+}
+
+.input-data input:focus ~ .label, 
+.input-data input:valid ~ .label{
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: rgb(82, 81, 81);
+}
+
+
+.input-data .label{
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+/* ---------------------------- */
+
+
+
+.input-data-border{
+  width: 100%;
+  height: 40px;
+  margin: 0 20px;
+  position: relative;
+}
+
+.input-data-border input{
+  display: block;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid rgba(0,0,0, 0.12);
+  transition: 0.3s ease-in-out;
+  border: 2px solid rgb(137, 137, 137);
+  padding: 0.5rem 1rem;
+  border-radius: 3rem;
+}
+
+.input-data-border input:focus ~ .label, 
+.input-data-border input:valid ~ .label{
+  transform: translateY(-20px);
+  font-size: 14px;
+ 
+  color: rgb(82, 81, 81);
+  background: white;
+  left: 20px;
+}
+
+.input-data-border .label{
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  left: 2rem;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+
+/* ------------------------------- */
+
+
+.something{
+  width: 5rem;
+  height: 1rem;
+ border: 1px solid rgb(207, 207, 207);
+ display: flex;
+ align-items: center;
+ padding:  1rem ;
+ position: relative;
+ background: rgb(207, 207, 207);
+ transition: 0.3s ease-in-out;
+border-radius: 10rem;
+}
+.something input[type="checkbox"]:not(:checked){
+z-index: 12;
+opacity: 0.01;
+cursor: pointer;
+transition: 0.3s ease-in-out;
+}
+.something input[type="checkbox"]:not(:checked) + .label{
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  cursor: pointer;
+  width: 1rem;
+  height: 1rem;
+  background: rgb(90, 89, 89);
+  border-radius: 5rem;
+  transition: 0.3s ease-in-out;
+  
+}
+
+.something input[type="checkbox"]:checked{
+  position: absolute;
+  right: 1rem;
+  z-index: 12;
+  opacity: 0.01;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+
+.something input[type="checkbox"]:checked + .label{
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  cursor: pointer;
+  width: 1rem;
+  height: 1rem;
+  background: rgb(253, 253, 253);
+  border-radius: 5rem;
+  transition: 0.3s ease-in-out;
+}
+
+
+/* ---------------- */
+
+
+
+
+@media screen and (min-width: 1200px) {
+   .standart-form,
+   .standart-form-bottom,
+   .standart-form-dark,
+   .standart-form-dark-bottom{
+    width: 300px;
+   }
 }
