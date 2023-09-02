@@ -171,6 +171,25 @@ pre{
   gap: 3rem;
   padding: 1rem;
 }
+.item-container-single{
+  display: grid;
+  width: var(--size-xxl);
+  grid-template-columns: repeat(1, 1fr);
+
+}
+.item-container-single .item{  
+    min-height: 5rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+     width: var(--size-full);
+    padding: var(--display-8);
+   background: var(--card-light);
+   border: var(--light-border);
+   border-radius: 5px;
+   box-shadow: var(--box-shadow-card);
+
+}
 .item-container .item {
   min-height: 5rem;
   justify-content: center;
@@ -238,6 +257,10 @@ padding: var(--display-8);
 }
 .item-container {
   grid-template-columns: repeat(2, 1fr);
+}
+.item-container-single{
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 }
 
 }

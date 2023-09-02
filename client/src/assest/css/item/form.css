@@ -1,0 +1,109 @@
+.Form {
+  padding: var(--display-7);
+}
+
+.standart-form {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background: rgba(29, 29, 29, 0.39);
+  border: 1px solid rgb(167, 167, 167);
+  padding: 1rem 0.5rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.standart-form h3{
+    filter: invert(1);
+}
+.standart-form .form-control {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.standart-form .form-control input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 13px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+.standart-form .form-control label {
+  color: rgb(255, 255, 255);
+}
+
+.standart-form button {
+  color: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+  width: 90%;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+
+.standart-form button:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+  border: 1px solid black;
+  font-weight: 900;
+}
+.standart-form-dark h3{
+    filter: invert(1);
+}
+.standart-form-dark {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background: rgba(29, 29, 29, 0.968);
+  border: 1px solid rgb(167, 167, 167);
+  padding: 1rem 0.5rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.standart-form-dark .form-control {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.standart-form-dark .form-control input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 13px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background: rgb(0, 0, 0);
+  color: #ffffff;
+}
+
+.standart-form-dark .form-control label {
+  color: rgb(255, 255, 255);
+}
+.standart-form-dark button {
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+  width: 90%;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+
+.standart-form-dark button:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: rgb(252, 252, 252);
+  background: rgb(0, 0, 0);
+  border: 1px solid black;
+  font-weight: 900;
+}

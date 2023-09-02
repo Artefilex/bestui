@@ -12,10 +12,10 @@ function Buttons() {
   };
 
   return (
-    <div className="Button-container flex">
+    <div className="Container flex">
       <h1 className="header-tag ">Buttons</h1>
       {allbtns.map((allItem, i) => (
-        <div className="Button-container flex"  key={i}>
+        <div className="flex"  key={i}>
           <CopyHeader
             itemType={allItem.header.itemType}
             code={allItem.header.headerCode}

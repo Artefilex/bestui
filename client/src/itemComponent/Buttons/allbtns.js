@@ -291,7 +291,6 @@ const all = [
       itemType: "Animation Hover Button",
       headerCode: `<button class='btn'>
     <i>H</i><i>o</i><i>v</i><i>e</i><i>r</i>
-    <i>t</i><i>h</i><i>e</i>
     <i>B</i><i>u</i><i>t</i><i>t</i><i>o</i><i>n</i>
    </button>`,
     },
@@ -343,7 +342,7 @@ const all = [
             transform: translate3d(0, 0, 0);
           }`,
         btncode: `
-        <i>H</i><i>o</i><i>v</i><i>e</i><i>r</i>\n<i>t</i><i>h</i><i>e</i>\n<i>B</i><i>u</i><i>t</i><i>t</i><i>o</i><i>n</i>\n`,
+        <i>H</i><i>o</i><i>v</i><i>e</i><i>r</i>\n<i>B</i><i>u</i><i>t</i><i>t</i><i>o</i><i>n</i>\n`,
         cls: "btn-hover-animate",
       },
     ],

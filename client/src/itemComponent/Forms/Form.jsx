@@ -2,22 +2,23 @@ import {useState} from "react";
 import CopyHeader from "../../mainComponent/copy/CopyHeader";
 import CssCopy from "../../mainComponent/copy/CssCopy";
 import allform from "./allform";
-import Singleform from "./Singleform";
+import FormCard from "./FormCard";
+import "../../assest/css/item/form.css"
 function Form() {
    const [activeForm , setActiveForm] = useState(null)
     const handleClick = (formId) =>{
      setActiveForm((prevForm) => (prevForm === formId ? null : formId))
   }
 
-  return <div className="Button-container flex">
+  return <div className="Container flex">
   <h1 className="header-tag ">Forms</h1>
   {allform.map((allItem, i) => (
-    <div className="Button-container flex"  key={i}>
+     <>
       <CopyHeader
         itemType={allItem.header.itemType}
         code={allItem.header.headerCode}
       />
-      <div className="item-container">
+      <div className="item-container-single">
         {allItem.codeArea.map((singleItem, se) => (
           <div className="item-flex" key={se}>
             <div className="item animation-container flex">
@@ -26,7 +27,8 @@ function Form() {
                 onClick={() => handleClick(`${se}-${allItem.header.headerCode}`)}
              
               >
-                <Singleform />
+                <FormCard clsInput={singleItem.clsInput} clsForm={singleItem.clsForm} clsBtn={singleItem.clsBtn}/>
+
               </div>
             </div>
             <div className="flex codebase">
@@ -38,7 +40,9 @@ function Form() {
           </div>
         ))}
       </div>
-    </div>
+     
+     </>
+  
   ))}
 </div>;
 }
