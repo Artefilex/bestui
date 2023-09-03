@@ -381,6 +381,7 @@ transition: 0.3s ease-in-out;
   padding: 2rem 4rem;
   height: 100%;
   padding-bottom: 5rem;
+  box-shadow: rgba(181, 179, 179, 0.939) 0px 7px 15px 0px;
 }
 .form-flex{
   display: flex;
@@ -461,6 +462,219 @@ transition: 0.3s ease-in-out;
   cursor: pointer;
   font-weight: 700;
 }
+
+/* ------------------------ */
+
+.form-container-dark{
+  position: relative;
+  padding: 2rem 4rem;
+  height: 100%;
+  padding-bottom: 5rem;
+  background: rgba(38, 37, 37, 0.888);
+  box-shadow: rgba(181, 179, 179, 0.939) 0px 7px 15px 0px;
+}
+.form-flex{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
+}
+.row,.column{
+  position: relative;
+}
+.row{
+  flex-direction: column;
+}
+.form-container-dark .input-data{
+  width: 100%;
+  height: 40px;
+  margin: 0 20px;
+  position: relative;
+}
+
+.form-container-dark .input-data input,
+.form-container-dark .input-data  textarea{
+  display: block;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.514);
+  background: transparent;
+  color:rgb(255, 255, 255);
+
+}
+
+.form-container-dark .input-data input:focus ~ .label, 
+.form-container-dark .input-data  textarea:focus ~ .label,
+.form-container-dark .input-data input:valid ~ .label,
+.form-container-dark .input-data textarea:valid ~ .label{
+  transform: translateY(-25px);
+  font-size: 14px;
+  color: rgb(225, 225, 225);
+}
+.form-container-dark .input-data textarea{
+  resize: none;
+  padding-top:20px;
+  width: 100%;
+  height: 5rem;
+}
+
+.form-container-dark .input-data .label{
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  color: rgb(255, 255, 255);
+}
+
+.form-container-dark #submit-btn{
+  position: relative;
+  top: 3rem;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.514);
+  cursor: pointer;
+  font-weight: 700;
+  transition: 0.5s all ;
+  color: rgb(255, 255, 255);
+}
+
+.form-container-dark #submit-btn:active,
+.form-container-dark #submit-btn:hover{
+  position: relative;
+  background: rgba(255, 255, 255, 0.201);
+  color: rgb(255, 255, 255);
+  outline: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+/* ------------------------------------------------- */
+
+
+
+.Contact-form {
+  flex-direction: column;
+  box-shadow: rgba(181, 179, 179, 0.939) 0px 7px 15px 0px;
+  padding: 1rem 2rem;
+  gap: 2rem;
+}
+.Contact-form .contact-info{
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.Contact-form .form-container-1{
+  position: relative;
+  /* padding: 2rem 4rem; */
+  height: 100%;
+  padding-bottom: 5rem;
+
+}
+.Contact-form  .form-flex{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
+}
+.Contact-form .row,.column{
+  position: relative;
+}
+.Contact-form  .row{
+  flex-direction: column;
+}
+.Contact-form .form-container-1 .input-data{
+  width: 100%;
+  height: 40px;
+  margin: 0 20px;
+  position: relative;
+}
+
+.Contact-form .form-container-1 .input-data input,
+.Contact-form .form-container-1 .input-data  textarea{
+  display: block;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid rgba(0,0,0, 0.12);
+  background: transparent;
+}
+
+.Contact-form .form-container-1 .input-data input:focus ~ .label, 
+.Contact-form .form-container-1 .input-data  textarea:focus ~ .label,
+.Contact-form .form-container-1 .input-data input:valid ~ .label,
+.Contact-form .form-container-1 .input-data textarea:valid ~ .label{
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: rgb(82, 81, 81);
+}
+.Contact-form .form-container-1 .input-data textarea{
+  resize: none;
+  padding-top:20px;
+  width: 100%;
+  height: 5rem;
+}
+
+.Contact-form .form-container-1 .input-data .label{
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.Contact-form .form-container-1 #submit-btn{
+  position: relative;
+  top: 3rem;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgba(0,0,0, 0.12);
+  cursor: pointer;
+  font-weight: 700;
+  transition: 0.5s all ;
+}
+
+.Contact-form .form-container-1 #submit-btn:active,
+.Contact-form .form-container-1 #submit-btn:hover{
+  position: relative;
+  background: rgb(142, 142, 142);
+  color: white;
+  outline: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+
+@media screen and (min-width:600px) {
+  .Contact-form{
+    flex-direction: row;
+  }
+ 
+  .Contact-form .row{
+  flex-direction: row;
+  }
+}
+
+
+
+
+
+
+
 
 @media screen and (min-width:600px) { 
   .row{

@@ -6,6 +6,7 @@ import FormCard from "./FormCard";
 import "../../assest/css/item/form.css"
 import ContactForm from "./ContactForm";
 import InputCard from "./InputCard";
+import ContactForm2 from "./ContactForm2";
 function Form() {
    const [activeForm , setActiveForm] = useState(null)
     const handleClick = (formId) =>{
@@ -20,7 +21,7 @@ function Form() {
         itemType={allItem.header.itemType}
         code={allItem.header.headerCode}
       />
-      <div className={allItem.header.itemContent ==="contact-form" ? "item-container-full" : "item-container-single"  }>
+      <div className={(allItem.header.itemContent ==="contact-form"  || allItem.header.itemContent ==="contact-form-2" )? "item-container-full" : "item-container-single"  }>
         {allItem.codeArea.map((singleItem, se) => (
           <div className="item-flex" key={se}>
             <div className="item animation-container flex">
@@ -29,9 +30,10 @@ function Form() {
                 onClick={() => handleClick(`${se}-${allItem.header.headerCode}`)}
              
               >
-                {allItem.header.itemContent == "only-input" &&  <InputCard inputType={singleItem.inputType}  clsInput ={singleItem.clsInput} textArea={singleItem.textArea}  cls= {singleItem.cls} /> }
-                {allItem.header.itemContent == "standart-form" &&  <FormCard clsInput={singleItem.clsInput} clsForm={singleItem.clsForm} clsBtn={singleItem.clsBtn}/>  }
-                {allItem.header.itemContent == "contact-form" && <ContactForm/>}
+                {allItem.header.itemContent === "only-input" &&  <InputCard inputType={singleItem.inputType}  clsInput ={singleItem.clsInput} textArea={singleItem.textArea}  cls= {singleItem.cls} /> }
+                {allItem.header.itemContent === "standart-form" &&  <FormCard clsInput={singleItem.clsInput} clsForm={singleItem.clsForm} clsBtn={singleItem.clsBtn}/>  }
+                {allItem.header.itemContent === "contact-form" && <ContactForm clsForm={singleItem.clsForm}/>}
+                {allItem.header.itemContent === "contact-form-2" && <ContactForm2 clsForm={singleItem.clsForm}/>}
               </div>
             </div>
             <div className="flex codebase">

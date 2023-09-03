@@ -12,8 +12,8 @@ function DocNav() {
      <Link to="/docs/forms" >  
          <span>Forms</span> 
      </Link>
-     <Link to="/docs/card" >  
-     <span>Cards</span> 
+     <Link to="/docs/navs" >  
+     <span>Navbar</span> 
      </Link>
      
     

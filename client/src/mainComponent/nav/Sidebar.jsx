@@ -44,9 +44,7 @@ function Sidebar() {
             <NavbarItem  content="Overview" btnName="Docs">
               <DocNav/>
             </NavbarItem>
-            <NavbarItem  content="Overview" btnName="Example">
-            <DocNav />
-            </NavbarItem>
+
           </ul> 
       )}
     </div>
