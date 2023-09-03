@@ -1,8 +1,24 @@
 # Personal UI
 
-## özet 
+Bu proje şimdiye kadar kullandıgım still dosyalarını özelleştirmek ve ileride tekrar kullanmak için tasarlandı .
 
- server ve client olarak uygulamamızı 2 ana dizine böldük . Server tarafında uygulama kullanıcı bilgilerini alarak bir oturum acacak ve her kullanıcı için özelleştirilmiş bir tasarım imkanı ve kendi materyalleri  kaydedebilecegi bir alan sunacak .
+iki ana dizinden oluşan projede mainComponent ve itemComponent yer almakta 
 
-## Server
+mainComponent projenin anadizini oluşturuken itemComponent her bir özellik için ayrı veri tutar
 
+
+```javascript
+{
+    header: {
+      itemType: "",
+      headerCode: ``,
+    },
+    codeArea: [
+      {
+        css: ` `,
+        btncode: ``,
+        cls: "",
+      },
+    ],
+  },
+```

@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
 :root{
-  --sidebar-bg-color : rgb(13, 12, 26);
+  --sidebar-bg-color : rgb(2, 28, 34);
   --sidebar-color : rgb(255,255,255);
   --white-bg: rgb(255, 255, 255);
   --card-light: rgb(250, 250, 250);
@@ -55,14 +55,11 @@
   --size-blog: 240px;
   --linear-home: linear-gradient(
     90deg,
-    hsl(244deg 37% 7%) 0%,
-    hsl(231deg 45% 14%) 14%,
-    hsl(220deg 54% 19%) 29%,
-    hsl(220deg 54% 19%) 43%,
-    hsl(220deg 54% 19%) 57%,
-    hsl(220deg 54% 19%) 71%,
-    hsl(231deg 45% 14%) 86%,
-    hsl(244deg 37% 7%) 100%
+    rgb(2, 28, 34) 0%,
+    rgb(15, 34, 38) 14%,
+    rgb(27, 48, 52)57%,
+    rgb(15, 34, 38) 86%,
+    rgb(2, 28, 34) 100%
   );
 
 }
@@ -128,7 +125,7 @@ pre{
   width: 100%;
   display: flex;
   flex-direction: column;
-  background: var( --dark-bg);
+  background: var(--linear-home);
   min-height: 100vh;
 }
 
@@ -177,19 +174,14 @@ pre{
   grid-template-columns: repeat(1, 1fr);
 
 }
-.item-container-single .item{  
-    min-height: 5rem;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-     width: var(--size-full);
-    padding: var(--display-8);
-   background: var(--card-light);
-   border: var(--light-border);
-   border-radius: 5px;
-   box-shadow: var(--box-shadow-card);
-
+.item-container-full{
+  display: grid;
+  width: var(--size-xxl);
+  grid-template-columns: repeat(1, 1fr);
 }
+
+.item-container-full .item,
+.item-container-single .item,
 .item-container .item {
   min-height: 5rem;
   justify-content: center;
@@ -202,7 +194,9 @@ padding: var(--display-8);
  border-radius: 5px;
  box-shadow: var(--box-shadow-card);
 }
-
+.item-container-full .item{
+  width: var(--size-full);
+}
 .Copy-Header{
   width: var(--size-xxl);
   align-items: flex-start;

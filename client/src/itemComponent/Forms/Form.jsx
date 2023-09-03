@@ -20,7 +20,7 @@ function Form() {
         itemType={allItem.header.itemType}
         code={allItem.header.headerCode}
       />
-      <div className="item-container-single">
+      <div className={allItem.header.itemContent ==="contact-form" ? "item-container-full" : "item-container-single"  }>
         {allItem.codeArea.map((singleItem, se) => (
           <div className="item-flex" key={se}>
             <div className="item animation-container flex">

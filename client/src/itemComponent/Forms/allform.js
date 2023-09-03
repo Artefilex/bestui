@@ -487,6 +487,209 @@ const allform = [
       },
     ],
   },
+  {
+    header: {
+      itemContent: "contact-form",
+      itemType: " Contact Form",
+      headerCode: ` import { useState } from "react";
+
+      function ContactForm() {
+        const [form, setForm] = useState({
+          firstName: "",
+          lastName: "",
+          emails: "",
+          telNumber: "",
+          message: "",
+        });
+        const handleChange = (e) => {
+          const {name, value} = e.target;
+          setForm((prevForm) => ({
+            ...prevForm,
+            [name]: value,
+          }));
+        
+        };
+        const handleSubmit = (e) => {
+          e.preventDefault();
+      
+          // api request
+      
+          console.log(form);
+          setForm({
+            firstName: "",
+            lastName: "",
+            emails: "",
+            telNumber: "",
+            message: "",
+          });
+        };
+        return (
+            <form className="form-container form-flex" onSubmit={handleSubmit}>
+              <div className="row form-flex">
+                <div className="column form-flex">
+                  <div className="input-data">
+                    <input
+                      type="text"
+                      value={form.firstName}
+                      name="firstName"
+                      onChange={handleChange}
+                      required
+                    />
+                    <div className="label"> First Name </div>
+                  </div>
+                  <div className="input-data">
+                    <input
+                      type="text"
+                      value={form.lastName}
+                      name="lastName"
+                      onChange={handleChange}
+                      required
+                    />
+                    <div className="label"> Last Name </div>
+                  </div>
+                </div>
+                <div className="column form-flex">
+                  <div className="input-data">
+                    <input
+                      type="text"
+                      value={form.emails}
+                      name="emails"
+                      onChange={handleChange}
+                      required
+                    />
+                    <div className="label"> Email </div>
+                  </div>
+                  <div className="input-data">
+                    <input
+                      type="tel"
+                      value={form.telNumber}
+                      name="telNumber"
+                      onChange={handleChange}
+                      required
+                    />
+                    <div className="label"> Telephone </div>
+                  </div>
+                </div>
+              </div>
+              <div className="column form-flex ">
+                <div className="input-data">
+                  <textarea name="message" value={form.message}  onChange={handleChange}>
+                  </textarea>
+                  <div className="label"> Message</div>
+                </div>
+                <button type="submit"> Submit</button>
+              </div>
+            </form>
+        );
+      }
+      
+      export default ContactForm;
+      
+          `,
+    },
+    codeArea: [
+      {
+        css: `
+        .form-container{
+          position: relative;
+          padding: 2rem 4rem;
+          height: 100%;
+          padding-bottom: 5rem;
+        }
+        .form-flex{
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          width: 100%;
+          gap: 1rem;
+        }
+        .row,.column{
+          position: relative;
+        }
+        .row{
+          flex-direction: column;
+        }
+        .form-container .input-data{
+          width: 100%;
+          height: 40px;
+          margin: 0 20px;
+          position: relative;
+        }
+        
+        .form-container .input-data input,
+        .form-container .input-data  textarea{
+          display: block;
+          width: 100%;
+          height: 100%;
+          outline: none;
+          border: none;
+          font-size: 17px;
+          border-bottom: 2px solid rgba(0,0,0, 0.12);
+          background: transparent;
+        }
+        
+        .form-container .input-data input:focus ~ .label, 
+        .form-container .input-data  textarea:focus ~ .label,
+        .form-container .input-data input:valid ~ .label,
+        .form-container .input-data textarea:valid ~ .label{
+          transform: translateY(-20px);
+          font-size: 14px;
+          color: rgb(82, 81, 81);
+        }
+        .form-container .input-data textarea{
+          resize: none;
+          padding-top:20px;
+          width: 100%;
+          height: 5rem;
+        }
+        
+        .form-container .input-data .label{
+          position: absolute;
+          pointer-events: none;
+          bottom: 10px;
+          font-size: 16px;
+          transition: all 0.3s ease;
+        }
+        
+        .form-container #submit-btn{
+          position: relative;
+          top: 3rem;
+          width: 100%;
+          padding: 0.5rem 1rem;
+          background: transparent;
+          border: none;
+          outline: none;
+          border-bottom: 2px solid rgba(0,0,0, 0.12);
+          cursor: pointer;
+          font-weight: 700;
+          transition: 0.5s all ;
+        }
+        
+        .form-container #submit-btn:active,
+        .form-container #submit-btn:hover{
+          position: relative;
+          background: rgb(142, 142, 142);
+          color: white;
+          outline: none;
+          cursor: pointer;
+          font-weight: 700;
+        }
+        
+        @media screen and (min-width:600px) { 
+          .row{
+            flex-direction: row;
+          }
+          
+        }
+      `,
+        cls: "Form flex",
+        clsInput: "standart-input",
+        clsBtn: "standart-form-btn",
+        clsForm: "standart-form-bottom",
+      },
+    ],
+  },
  
 ];
 
